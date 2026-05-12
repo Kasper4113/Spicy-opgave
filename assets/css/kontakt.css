@@ -79,6 +79,10 @@ body {
     color: var(--lyseblå);
 }
 
+.specialStart:hover {
+    color: var(--lyseblå);
+}
+
 /*  */
 /* MAIN STYLING */
 /*  */
@@ -134,4 +138,56 @@ body {
 
 .sendNulstil button:hover {
     background-color:  var(--lyseblå);
+}
+
+
+/*  */
+/* Footer */
+/*  */
+
+footer {
+    margin-top: 10vh;
+}
+
+.footFlex {
+    background-color: var(--mørkegrå);
+    display: flex;
+    gap: 30%;
+    padding: 2rem;
+    padding-left: 4rem;
+}
+
+.footFlex div {
+    list-style: none;
+}
+
+.footFlex div h1 {
+    color: var(--mørkeblå);
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.footFlex div p {
+    color: var(--tekstfarve);
+    font-family: "sofia sans condensed", sans-serif;
+    font-size: 25px;
+}
+
+.footFlex div iframe {
+    border-radius: 6px;
+}
+
+.footFlex div img {
+    width: 6vw;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.footFlex div a p {
+    color: var(--mørkeblå);
+    font-family: "sofia sans condensed", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
 }

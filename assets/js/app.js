@@ -24,12 +24,12 @@ tiles.forEach(tile => {
 		bigTile.src = smallSrc;
 		bigTile.alt = smallAlt;
 
-		// Fjerner 'selected' klassen fra alle billeder
+		// Fjerner "selected" klassen fra alle billeder
 		tiles.forEach(t => t.classList.remove('selected'));
 
 		tile.classList.add('selected');
 
-		// Fjerner 'selected' igen efter 300ms
+		// Fjerner "selected" igen efter 300ms
 		setTimeout(() => tile.classList.remove('selected'), 300);
 	});
 });

@@ -79,6 +79,10 @@ body {
     color: var(--lyseblå);
 }
 
+.specialStart:hover {
+    color: var(--lyseblå);
+}
+
 /*  */
 /* Main Styling */
 /*  */
@@ -246,29 +250,4 @@ footer {
     font-family: "sofia sans condensed", sans-serif;
     font-size: 25px;
     text-decoration: none;
-}
-
-
-/* Modal */
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 6px;
-  width: 250px;
-  text-align: center;
-}
-
-.modal-content button {
-  margin: 5px;
-  padding: 8px 12px;
-  cursor: pointer;
 }
