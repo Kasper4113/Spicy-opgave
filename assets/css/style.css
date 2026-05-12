@@ -4,26 +4,125 @@
 
 body {
     margin: 0;
+    background-color: #c2c2c2;
 } 
 
-main {
-    background-color: #ccc;
-    height: 100%;
-    padding-bottom: 10rem;
-    padding-top: 2rem;
+:root {
+    /* Tekstfarver */
+    --tekstfarve: #C2C2C2;
+
+    /* Farver */
+    --sort: #000000;
+    --mørkegrå: #333333;
+    --rød: #c82113;
+    --mørkerød: #94180e;
+
+    /* blandet */
+    --lyseblå: #1085df;
+    --mørkeblå: #0e5a94;
 }
+
+/*  */
+/* Header & Navigation */
+/*  */
+
+.headerImg {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.baggrundsImg {
+    position: relative;
+    display: inline;
+}
+
+.spicyLogo {
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    background-color: var(--sort);
+    color: var(--tekstfarve);
+    padding-left: 3rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: -5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--tekstfarve);
+    font-size: 32px;
+    font-family: 'Bebas Neue';
+}
+
+.special a {
+    color: var(--mørkeblå);
+}
+
+/*  */
+/* Main Styling */
+/*  */
+
+/* OM SPICY */
+
+.omH1 {
+    margin-left: 12.4vw;
+    color: var(--mørkerød);
+    font-family: "Bebas Neue";
+    font-size: 50px;
+}
+
+.omSpicy {
+    display: flex;
+    margin: 0px 12.4vw 0px 12.4vw;
+    gap: 5rem;
+}
+
+.omSpicy p {
+    font-family: "sofia sans condensed", sans-serif;
+}
+
+.omSpicy h2 {
+    font-family: "Bebas Neue";
+    font-size: 32px;
+}
+
+.readMore {
+    text-align: right;
+}
+
+
 
 /*  */
 /* VÆLG DIN FAVORIT (BILLEDESKIFTER */
 /*  */
 
-
 /* overall styling */
+.fave {
+    color: var(--mørkerød);
+    margin-left: 12.4vw;
+}
+
 .gridSect {
     display: grid;
-    grid-template-columns: 400px 450px;
-    grid-template-rows: 400px 400px;
-    gap: 4px;
+    grid-template-columns: 600px 450px;
+    grid-template-rows: 600px 600px;
+    gap: 80px;
     justify-content: center;
     padding: 1rem;
 }
@@ -33,9 +132,9 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 4px;
-    width: 400px;
-    height: 400px;
+    gap: 40px;
+    width: 600px;
+    height: 600px;
 }
 
 /* Styling af 2x2 grid */
@@ -57,8 +156,8 @@ main {
 
 /* det store billede */
 .bigImg {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     border: 2px solid black;
     overflow: hidden;
     border-radius: 6px;
@@ -69,4 +168,69 @@ main {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+
+
+/* Hvad er spicy */
+
+.forsideIntro {
+    margin: -40rem 12.4% 20px 12.4%;
+    padding: 20px;
+    border-radius: 6px;
+    color: var(--tekstfarve);
+    background-color: var(--mørkegrå);
+}
+
+@media (min-width: 2000px) {
+    .forsideIntro {
+        margin: -40rem 4.6% 20px 4.6%;
+    }
+}
+
+.forsideIntro h2 {
+    margin: 0;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+
+.forsideIntro p {
+    font-family: "Sofia Sans Condensed", sans-serif;
+    font-size: 20px;
+}
+
+.spicyBtn {
+    background-color: var(--mørkeblå);
+    list-style: none;
+    border-radius: 6px;
+}
+
+.spicyBtn a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--tekstfarve);
+}
+
+.spicyBtn a p {
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    margin: 0;
+    padding: 10px;
+}
+
+/*  */
+/* Galleri */
+/*  */
+
+.galleriImg {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin-bottom: 3vw;
+}
+
+.galleriImg img {
+    height: 400px;
+    width: auto;
+    border-radius: 6px;
 }

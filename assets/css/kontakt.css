@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #c2c2c2;
+} 
+
+:root {
+    /* Tekstfarver */
+    --tekstfarve: #C2C2C2;
+
+    /* Farver */
+    --sort: #000000;
+    --mørkegrå: #333333;
+    --rød: #c82113;
+    --mørkerød: #94180e;
+
+    /* blandet */
+    --lyseblå: #1085df;
+    --mørkeblå: #0e5a94;
+}
+
+/*  */
+/* Header & Navigation */
+/*  */
+
+.headerImg {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.baggrundsImg {
+    position: relative;
+    display: inline;
+}
+
+.spicyLogo {
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    
+}
+
+.navigation {
+    background-color: var(--sort);
+    color: var(--tekstfarve);
+    padding-left: 3rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: -5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--tekstfarve);
+    font-size: 32px;
+    font-family: 'Bebas Neue';
+}
+
+.special a {
+    color: var(--mørkeblå);
+}
