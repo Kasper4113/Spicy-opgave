@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Spicy-Kontakt</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="./assets/css/kontakt.css" />
 	<script src="./assets/js/app.js" defer></script>
 </head>
@@ -25,5 +28,31 @@
 			</nav>
 		</section>
 	</header>
+    <main>
+        <form class="kontakt-form" id="kontakt-form">
+            <div>
+                <h1>Skriv en mail til os</h1>
+            </div>
+            <div>
+                <input type="text" name="navn" id="nameinputer" placeholder="Fulde navn...">
+            </div>
+            <div>
+                <input type="number" id="ageinputer" placeholder="Alder..." name="age">
+            </div>
+            <div>
+                <input type="tel" id="tlfinputer" placeholder="Tlf-nr..." name="tlf">
+            </div>
+            <div>
+                <input type="email" id="mailinputer" placeholder="E-mail..." name="email">
+            </div>
+            <div>
+                <input type="text" name="tekstfelt" id="message" placeholder="Skriv din besked her...">
+            </div>
+            <div class="sendNulstil">
+                <button type="submit" id="buttoner">Send</button>
+                <button type="reset">Nulstil</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #c2c2c2;
+    background-color: var(--mørkegrå);
 } 
 
 :root {
@@ -67,6 +67,71 @@ body {
     font-family: 'Bebas Neue';
 }
 
+.special {
+    color: var(--mørkeblå);
+}
+
 .special a {
     color: var(--mørkeblå);
+}
+
+.special a:hover {
+    color: var(--lyseblå);
+}
+
+/*  */
+/* MAIN STYLING */
+/*  */
+
+.kontakt-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+.kontakt-form h1 {
+    font-family: "Bebas Neue";
+    color: var(--mørkeblå);
+    margin: 0;
+}
+
+.kontakt-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--mørkegrå);
+    border-radius: 6px;
+}
+
+.kontakt-form #message {
+    height: 150px;
+    margin-bottom: -20px;
+}
+
+.tlf {
+    display: flex;
+    font-family: "sofia sans condensed", sans-serif;
+    font-size: 25px;
+}
+
+.sendNulstil button {
+    padding: 10px 10px 10px 0px;
+    font-size: 1rem;
+    margin-top: 20px;
+    border: 1px solid var(--mørkegrå);
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--mørkeblå);
+    color: #ffffff;
+}
+
+.sendNulstil button:hover {
+    background-color:  var(--lyseblå);
 }
